@@ -1,4 +1,4 @@
-<br>
+![alt text](image.png)<br>
 <h1 align="center">
 <span> Asgher Mehboob — Personal Portfolio </span>
 <img align="center" src="./Assets/favicons/favicon.png" alt="Favicon" width="50" height="50">
