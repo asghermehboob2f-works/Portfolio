@@ -822,7 +822,8 @@ header.scrolled {
 .skills-main {
 	width: 100%;
 	/* height: fit-content; */
-	padding-top: 95px;
+	padding-top: 110px;
+	padding-bottom: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -830,6 +831,7 @@ header.scrolled {
 
 .skills-main .skills-section {
 	width: 1000px;
+	max-width: 95%;
 	/* margin-bottom: -40px; */
 }
 
@@ -907,6 +909,7 @@ header.scrolled {
 	margin-bottom: 25px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .skills-main .skills-section .skills-group-row .skill-block {
@@ -922,6 +925,8 @@ header.scrolled {
 
 .skills-main .skills-section .skills-group-row .icon-img {
 	width: 55px;
+	height: 55px;
+	min-width: 55px;
 	aspect-ratio: 1;
 	display: flex;
 	justify-content: center;
@@ -1290,6 +1295,7 @@ header.scrolled {
 	width: 100%;
 	/* margin-top: 150px; */
 	padding-top: 150px;
+	padding-bottom: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1337,6 +1343,113 @@ header.scrolled {
 	font-size: 1.05rem;
 	font-weight: 500;
 	text-align: justify;
+}
+
+.career-main .career-section .featured-projects,
+.career-main .career-section .freelance-experience {
+	margin-top: 50px;
+}
+
+.career-main .career-section .project-cards {
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+}
+
+.career-main .career-section .project-card {
+	padding: 22px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(4px);
+	transition: all 0.3s ease;
+}
+
+.career-main .career-section .project-card:hover {
+	border-color: var(--main-color);
+}
+
+.career-main .career-section .project-card .card-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 8px;
+}
+
+.career-main .career-section .project-card .project-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--text-color);
+}
+
+.career-main .career-section .project-card .project-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: white;
+	background-color: var(--main-color);
+	transition: 0.3s;
+}
+
+.career-main .career-section .project-card .project-badge:hover {
+	background-color: #4e54c8;
+}
+
+.career-main .career-section .project-card .project-tech {
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: var(--main-color);
+	margin-bottom: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+}
+
+.career-main .career-section .project-card .tech-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 3px 9px;
+	border-radius: 6px;
+	font-size: 0.8rem;
+	background: rgba(255, 255, 255, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	color: var(--text-color);
+}
+
+.career-main .career-section .project-card .project-bullets {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
+.career-main .career-section .project-card .bullet-item {
+	display: flex;
+	align-items: flex-start;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--text-color);
+	line-height: 1.5;
+}
+
+.career-main .career-section .project-card .bullet-item .bullet-icon {
+	min-width: 8px;
+	min-height: 8px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: var(--main-color);
+	margin-top: 8px;
+	margin-right: 12px;
 }
 
 .career-main .career-section .career-goals {
@@ -1722,8 +1835,7 @@ header.scrolled {
 }
 
 .page {
-	height: 100vh;
-	/* min-height: 100%; */
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
