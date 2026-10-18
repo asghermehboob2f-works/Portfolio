@@ -1092,9 +1092,15 @@ header.scrolled {
 	width: 300px;
 	/* height: 180px; */
 	aspect-ratio: 300/180;
+	object-fit: cover;
 	/* min-width: 200px; */
 	border-radius: 10px;
 	border: 2px solid var(--main-color);
+}
+
+.education-main .education-section .study.first .image img {
+	width: 335px;
+	aspect-ratio: 16/9;
 }
 
 .education-main .education-section .study .line {
