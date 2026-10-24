@@ -38,77 +38,106 @@
 
     <div class="page">
         <main class="contact-main">
+            <!-- Modern Contact Hero -->
+            <div class="contact-hero">
+                <div class="contact-pill"><i class="fa-solid fa-paper-plane"></i> Get In Touch</div>
+                <h1 class="contact-title">Let's Connect &amp; Collaborate</h1>
+                <p class="contact-subtitle">
+                    Have an opportunity, collaboration idea, or question? Feel free to reach out via the form below or connect directly through any of my channels.
+                </p>
+            </div>
+
             <div class="contact-full">
+                <!-- Left Panel: Contact Details & Status -->
                 <div class="contact-section">
-                    <div class="cs-top mobile-show">
-                        <h1>Reach Me</h1>
-                        <div class="border-line"></div>
-                    </div>
-                    <div class="cs-item email">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="text">
-                            <div class="placeHolder">E-mail</div>
-                            <div class="info">asghermehboob2f@gmail.com</div>
+                    <div class="cs-top">
+                        <div class="cs-header-text">
+                            <h2>Reach Me Directly</h2>
+                            <p>I'm always keen to discuss software engineering, internships, and full-stack projects.</p>
+                        </div>
+                        <div class="status-badge">
+                            <span class="status-pulse"></span>
+                            <span>Available for Full-Time Roles &amp; Projects</span>
                         </div>
                     </div>
-                    <div class="cs-item number">
-                        <div class="icon"><i class="fas fa-phone"></i></div>
-                        <div class="text">
-                            <div class="placeHolder">Phone</div>
-                            <div class="info">Available on Request</div>
+
+                    <div class="cs-items-list">
+                        <a href="mailto:asghermehboob2f@gmail.com" class="cs-item email" title="Send Email">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="text">
+                                <div class="placeHolder">E-mail</div>
+                                <div class="info">asghermehboob2f@gmail.com</div>
+                            </div>
+                            <div class="action-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        </a>
+
+                        <div class="cs-item number">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <div class="text">
+                                <div class="placeHolder">Phone</div>
+                                <div class="info">Available on Request</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cs-item address">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="text">
-                            <div class="placeHolder">Location</div>
-                            <div class="info">Rajouri – Ganderbal, Jammu &amp; Kashmir, India</div>
+
+                        <div class="cs-item address">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="text">
+                                <div class="placeHolder">Location</div>
+                                <div class="info">Rajouri – Ganderbal, Jammu &amp; Kashmir, India</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cs-item linkedin">
-                        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-                        <div class="text">
-                            <div class="placeHolder">LinkedIn</div>
-                            <div class="info"><a href="https://www.linkedin.com/in/asgher-mehboob-43874b436" target="_blank" style="color: inherit; text-decoration: underline;">Asgher Mehboob</a></div>
-                        </div>
-                    </div>
-                    <div class="cs-item github">
-                        <div class="icon"><i class="fa-brands fa-github"></i></div>
-                        <div class="text">
-                            <div class="placeHolder">GitHub</div>
-                            <div class="info"><a href="https://github.com/asghermehboob2f-works" target="_blank" style="color: inherit; text-decoration: underline;">asghermehboob2f-works</a></div>
-                        </div>
+
+                        <a href="https://www.linkedin.com/in/asgher-mehboob-43874b436" target="_blank" rel="noopener noreferrer" class="cs-item linkedin" title="Visit LinkedIn Profile">
+                            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                            <div class="text">
+                                <div class="placeHolder">LinkedIn</div>
+                                <div class="info">Asgher Mehboob</div>
+                            </div>
+                            <div class="action-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        </a>
+
+                        <a href="https://github.com/asghermehboob2f-works" target="_blank" rel="noopener noreferrer" class="cs-item github" title="Visit GitHub Profile">
+                            <div class="icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="text">
+                                <div class="placeHolder">GitHub</div>
+                                <div class="info">asghermehboob2f-works</div>
+                            </div>
+                            <div class="action-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Right Panel: Contact Form -->
                 <section class="contact-form">
-                    <h1>Contact Me</h1>
-                    <div class="border-line"></div>
-                    <!-- <p>Feel free to get in touch with me by filling out the form below.</p> -->
+                    <div class="cf-header">
+                        <h2>Send a Message</h2>
+                        <p>Leave a note and I'll respond as soon as possible.</p>
+                    </div>
+
                     <div class="contact-submit-after">
                         <div class="box">
                             <i class="fa-solid fa-circle-check csa-icon"></i>
-                            <div class="csa-text">Message sent successfully</div>
-                            <div class="csa-ok">OK</div>
+                            <div class="csa-text">Message Sent Successfully!</div>
+                            <p class="csa-desc">Thank you for reaching out. I'll get back to you shortly.</p>
+                            <div class="csa-ok">Send Another Message</div>
                         </div>
                     </div>
+
                     <form id="contact-form" class="form-section" novalidate>
                         <div class="form-group name-section">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name"><i class="fa-regular fa-user"></i> Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Alex Johnson" required autocomplete="name">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email"><i class="fa-regular fa-envelope"></i> Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. alex@example.com" required autocomplete="email">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message"><i class="fa-regular fa-comment-dots"></i> Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Hi Asgher, I'd like to talk to you about..." required></textarea>
                         </div>
-                        <div class="error"><i class="fa-solid fa-circle-xmark error-icon"></i>Please fill out all the
-                            fields
-                        </div>
-                        <div class="email-error"><i class="fa-solid fa-circle-xmark error-icon"></i>Email address is not
-                            valid</div>
+                        <div class="error"><i class="fa-solid fa-circle-xmark error-icon"></i>Please fill out all the fields</div>
+                        <div class="email-error"><i class="fa-solid fa-circle-xmark error-icon"></i>Please enter a valid email address</div>
                         <button type="submit" id="contact-submit" class="contact-button">
                             <div class="contact-load">
                                 <div class="line"></div>
@@ -116,7 +145,8 @@
                                 <div class="line"></div>
                             </div>
                             <div class="submit-text">
-                                Submit
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane send-icon"></i>
                             </div>
                         </button>
                     </form>
