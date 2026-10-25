@@ -10,12 +10,20 @@ menu.onclick = () => {
 }
 
 navtc.onclick = () => {
-	menuicon.classList.toggle('bx-x');
+	menuicon.classList.remove('bx-x');
 	navbar.classList.remove('open');
 	navtc.classList.remove('nav-touch-close-open');
 	navtc.classList.remove("nav-tc-z");
 	navtc.classList.remove("nav-LR-TC");
 }
+
+document.addEventListener('keydown', (e) => {
+	if (e.key === 'Escape' && navbar.classList.contains('open')) {
+		menuicon.classList.remove('bx-x');
+		navbar.classList.remove('open');
+		navtc.classList.remove('nav-touch-close-open');
+	}
+});
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
