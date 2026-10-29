@@ -1832,20 +1832,23 @@ header.scrolled {
 }
 
 .gallery-main .gallery-section .column .header .text {
-	min-width: 151px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	white-space: nowrap;
+	flex-shrink: 0;
 	color: var(--main-color);
 	border: 2px solid var(--main-color);
-	border-radius: 10px;
-	/* border-radius: 10px 10px 0px 0px; */
-	/* border-bottom: 0px; */
-	padding: 0px 10px;
+	border-radius: 12px;
+	padding: 6px 20px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(4px);
 }
 
-.gallery-main .gallery-section .column.australia .header .text {
-	min-width: 162.3px;
+.gallery-main .gallery-section .column .header .text i {
+	font-size: 1.15rem;
 }
 
 .gallery-main .gallery-section .column .header .header-line {
