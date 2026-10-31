@@ -1138,103 +1138,68 @@ header.scrolled {
 	margin-bottom: 24px;
 }
 
-/* Stats Ribbon - Enhanced Modern Glassmorphism Cards */
+/* Stats Ribbon - Slim & Clean Minimalist Glassmorphic Cards */
 .skills-stats-ribbon {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 16px;
-	margin: 0 auto 32px auto;
+	gap: 12px;
+	margin: 0 auto 24px auto;
 	width: 100%;
-	max-width: 1100px;
+	max-width: 960px;
 }
 
 .stat-chip {
 	position: relative;
 	display: flex;
 	align-items: center;
-	gap: 14px;
-	padding: 14px 18px;
-	background: linear-gradient(135deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.22) 100%);
-	backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(16px);
-	border: 1px solid rgba(255, 255, 255, 0.65);
-	border-radius: 16px;
-	box-shadow: 0 10px 25px -4px rgba(28, 25, 45, 0.06), 0 2px 6px rgba(0, 0, 0, 0.02), inset 0 1px 1px rgba(255, 255, 255, 0.95);
-	transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-	overflow: hidden;
-}
-
-/* Glowing top highlight line on hover */
-.stat-chip::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 2px;
-	background: linear-gradient(90deg, transparent, rgba(165, 42, 42, 0.65), transparent);
-	opacity: 0;
-	transition: opacity 0.3s ease;
-}
-
-/* Corner ambient reflection */
-.stat-chip::after {
-	content: '';
-	position: absolute;
-	top: -24px;
-	right: -24px;
-	width: 60px;
-	height: 60px;
-	background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 70%);
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.3s ease;
+	gap: 10px;
+	padding: 8px 14px;
+	background: rgba(255, 255, 255, 0.38);
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
+	border: 1px solid rgba(255, 255, 255, 0.58);
+	border-radius: 12px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+	transition: all 0.22s ease;
 }
 
 .stat-chip:hover {
-	transform: translateY(-4px);
-	background: linear-gradient(135deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.38) 100%);
-	border-color: rgba(255, 255, 255, 0.95);
-	box-shadow: 0 16px 36px -6px rgba(165, 42, 42, 0.16), 0 4px 12px rgba(0, 0, 0, 0.04), inset 0 1px 1px rgba(255, 255, 255, 1);
+	transform: translateY(-2px);
+	background: rgba(255, 255, 255, 0.56);
+	border-color: rgba(255, 255, 255, 0.88);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06), inset 0 1px 0 #ffffff;
 }
 
-.stat-chip:hover::before,
-.stat-chip:hover::after {
-	opacity: 1;
-}
-
-/* Modern Icon Container Badge */
+/* Slim Icon Badge */
 .stat-chip .stat-icon-wrap,
 .stat-chip > i {
-	width: 46px;
-	height: 46px;
-	min-width: 46px;
-	border-radius: 13px;
-	background: linear-gradient(135deg, rgba(165, 42, 42, 0.12) 0%, rgba(238, 174, 202, 0.3) 100%);
-	border: 1px solid rgba(165, 42, 42, 0.18);
-	box-shadow: 0 4px 10px rgba(165, 42, 42, 0.06);
+	width: 36px;
+	height: 36px;
+	min-width: 36px;
+	border-radius: 9px;
+	background: rgba(165, 42, 42, 0.08);
+	border: 1px solid rgba(165, 42, 42, 0.14);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transition: all 0.22s ease;
 }
 
 .stat-chip .stat-icon-wrap i,
 .stat-chip > i {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	color: var(--main-color);
-	transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transition: transform 0.22s ease;
 }
 
 .stat-chip:hover .stat-icon-wrap,
 .stat-chip:hover > i {
-	background: linear-gradient(135deg, rgba(165, 42, 42, 0.2) 0%, rgba(238, 174, 202, 0.45) 100%);
-	border-color: rgba(165, 42, 42, 0.32);
-	box-shadow: 0 6px 14px rgba(165, 42, 42, 0.14);
+	background: rgba(165, 42, 42, 0.14);
+	border-color: rgba(165, 42, 42, 0.24);
 }
 
 .stat-chip:hover .stat-icon-wrap i {
-	transform: scale(1.12);
+	transform: scale(1.08);
 }
 
 /* Stat Text Info */
@@ -1247,20 +1212,20 @@ header.scrolled {
 }
 
 .stat-chip .stat-val {
-	font-size: 1.28rem;
+	font-size: 1.05rem;
 	font-weight: 700;
-	color: #1f2937;
-	letter-spacing: -0.02em;
+	color: #111827;
+	letter-spacing: -0.01em;
 	line-height: 1.15;
 }
 
 .stat-chip .stat-lbl {
-	font-size: 0.76rem;
+	font-size: 0.72rem;
 	font-weight: 500;
 	color: #4b5563;
-	letter-spacing: 0.15px;
-	margin-top: 3px;
-	line-height: 1.25;
+	letter-spacing: 0.1px;
+	margin-top: 1px;
+	line-height: 1.2;
 	white-space: nowrap;
 }
 
@@ -1683,8 +1648,8 @@ header.scrolled {
 @media (max-width: 900px) {
 	.skills-stats-ribbon {
 		grid-template-columns: repeat(2, 1fr);
-		gap: 14px;
-		max-width: 620px;
+		gap: 10px;
+		max-width: 520px;
 	}
 	.skills-grid-4 {
 		grid-template-columns: repeat(2, 1fr);
@@ -1707,11 +1672,11 @@ header.scrolled {
 @media (max-width: 580px) {
 	.skills-stats-ribbon {
 		grid-template-columns: 1fr;
-		gap: 12px;
+		gap: 8px;
 		max-width: 100%;
 	}
 	.stat-chip {
-		padding: 12px 16px;
+		padding: 7px 12px;
 	}
 	.stat-chip .stat-lbl {
 		white-space: normal;
