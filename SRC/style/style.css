@@ -1152,66 +1152,48 @@ header.scrolled {
 .stat-chip {
 	display: inline-flex;
 	align-items: center;
-	gap: 10px;
+	gap: 9px;
 	padding: 9px 16px;
 	background: rgba(255, 255, 255, 0.16);
-	backdrop-filter: blur(14px);
-	-webkit-backdrop-filter: blur(14px);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
 	border: 1px solid rgba(255, 255, 255, 0.28);
 	border-radius: 12px;
-	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 	white-space: nowrap;
-	transition: all 0.25s ease;
+	transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .stat-chip:hover {
 	transform: translateY(-2px);
 	background: rgba(255, 255, 255, 0.26);
 	border-color: rgba(255, 255, 255, 0.45);
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-/* Crisp Clean Icons - Unboxed with Smooth Micro-Interaction */
-.stat-chip .stat-icon-wrap,
-.stat-chip > i {
+/* Crisp Clean Icons - Perfectly Centered, Steady on Hover */
+.stat-chip i,
+.stat-chip .stat-icon-wrap i {
+	font-size: 1.05rem;
+	color: var(--main-color);
+	line-height: 1;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: auto;
-	height: auto;
-	min-width: unset;
-	background: transparent;
-	border: none;
-	box-shadow: none;
-	border-radius: 0;
-	padding: 0;
-}
-
-.stat-chip .stat-icon-wrap i,
-.stat-chip > i {
-	font-size: 1.25rem;
-	color: var(--main-color);
-	line-height: 1;
-	transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.stat-chip:hover .stat-icon-wrap i,
-.stat-chip:hover > i {
-	transform: scale(1.14);
 }
 
 /* Stat Text Info - Single Line Without Breaking */
 .stat-chip .stat-info,
 .stat-chip > div:not(.stat-icon-wrap) {
 	display: inline-flex;
-	flex-direction: row;
 	align-items: baseline;
 	gap: 6px;
 	white-space: nowrap;
+	line-height: 1;
 }
 
 .stat-chip .stat-val {
-	font-size: 1.05rem;
+	font-size: 0.96rem;
 	font-weight: 700;
 	color: var(--text-color);
 	letter-spacing: -0.01em;
@@ -1220,7 +1202,7 @@ header.scrolled {
 }
 
 .stat-chip .stat-lbl {
-	font-size: 0.8rem;
+	font-size: 0.82rem;
 	font-weight: 500;
 	color: #4b5563;
 	letter-spacing: 0.1px;

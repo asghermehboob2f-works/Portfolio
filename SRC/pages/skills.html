@@ -55,39 +55,31 @@
                     <!-- Stats Ribbon -->
                     <div class="skills-stats-ribbon">
                         <div class="stat-chip">
-                            <div class="stat-icon-wrap">
-                                <i class="fa-solid fa-layer-group"></i>
-                            </div>
+                            <i class="fa-solid fa-layer-group"></i>
                             <div class="stat-info">
-                                <div class="stat-val" data-target="28" data-suffix="+">28+</div>
-                                <div class="stat-lbl">Core Technologies</div>
+                                <span class="stat-val">28+</span>
+                                <span class="stat-lbl">Core Technologies</span>
                             </div>
                         </div>
                         <div class="stat-chip">
-                            <div class="stat-icon-wrap">
-                                <i class="fa-solid fa-cubes-stacked"></i>
-                            </div>
+                            <i class="fa-solid fa-cubes-stacked"></i>
                             <div class="stat-info">
-                                <div class="stat-val" data-target="6" data-suffix="">6</div>
-                                <div class="stat-lbl">Specialized Domains</div>
+                                <span class="stat-val">6</span>
+                                <span class="stat-lbl">Specialized Domains</span>
                             </div>
                         </div>
                         <div class="stat-chip">
-                            <div class="stat-icon-wrap">
-                                <i class="fa-solid fa-diagram-project"></i>
-                            </div>
+                            <i class="fa-solid fa-diagram-project"></i>
                             <div class="stat-info">
-                                <div class="stat-val">Full-Stack</div>
-                                <div class="stat-lbl">End-to-End Delivery</div>
+                                <span class="stat-val">Full-Stack</span>
+                                <span class="stat-lbl">End-to-End Delivery</span>
                             </div>
                         </div>
                         <div class="stat-chip">
-                            <div class="stat-icon-wrap">
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
+                            <i class="fa-solid fa-circle-check"></i>
                             <div class="stat-info">
-                                <div class="stat-val">Production</div>
-                                <div class="stat-lbl">Ready Code Standards</div>
+                                <span class="stat-val">Production</span>
+                                <span class="stat-lbl">Ready Code Standards</span>
                             </div>
                         </div>
                     </div>
@@ -1114,27 +1106,6 @@
                     searchClear.style.display = 'none';
                     searchInput.focus();
                     updateView();
-                });
-            }
-
-            // Animated Stat Counter on Load
-            const statCounters = document.querySelectorAll('.stat-val[data-target]');
-            if (statCounters.length > 0) {
-                statCounters.forEach(counter => {
-                    const target = parseInt(counter.getAttribute('data-target'), 10);
-                    const suffix = counter.getAttribute('data-suffix') || '';
-                    if (isNaN(target)) return;
-                    let current = 0;
-                    const duration = 1100;
-                    const stepTime = Math.max(25, Math.floor(duration / target));
-                    const timer = setInterval(() => {
-                        current += 1;
-                        counter.textContent = current + suffix;
-                        if (current >= target) {
-                            counter.textContent = target + suffix;
-                            clearInterval(timer);
-                        }
-                    }, stepTime);
                 });
             }
         });
