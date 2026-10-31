@@ -1138,68 +1138,64 @@ header.scrolled {
 	margin-bottom: 24px;
 }
 
-/* Stats Ribbon - Slim & Clean Minimalist Glassmorphic Cards */
+/* Stats Ribbon - Clean, Balanced Frosted Glass */
 .skills-stats-ribbon {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 12px;
-	margin: 0 auto 24px auto;
+	gap: 14px;
+	margin: 0 auto 26px auto;
 	width: 100%;
-	max-width: 960px;
+	max-width: 980px;
 }
 
 .stat-chip {
-	position: relative;
 	display: flex;
 	align-items: center;
-	gap: 10px;
-	padding: 8px 14px;
-	background: rgba(255, 255, 255, 0.38);
+	gap: 12px;
+	padding: 10px 16px;
+	background: rgba(255, 255, 255, 0.16);
 	backdrop-filter: blur(14px);
 	-webkit-backdrop-filter: blur(14px);
-	border: 1px solid rgba(255, 255, 255, 0.58);
-	border-radius: 12px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.8);
-	transition: all 0.22s ease;
+	border: 1px solid rgba(255, 255, 255, 0.28);
+	border-radius: 14px;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+	transition: all 0.25s ease;
 }
 
 .stat-chip:hover {
 	transform: translateY(-2px);
-	background: rgba(255, 255, 255, 0.56);
-	border-color: rgba(255, 255, 255, 0.88);
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06), inset 0 1px 0 #ffffff;
+	background: rgba(255, 255, 255, 0.26);
+	border-color: rgba(255, 255, 255, 0.45);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
-/* Slim Icon Badge */
+/* Crisp Clean Icons - Unboxed with Smooth Micro-Interaction */
 .stat-chip .stat-icon-wrap,
 .stat-chip > i {
-	width: 36px;
-	height: 36px;
-	min-width: 36px;
-	border-radius: 9px;
-	background: rgba(165, 42, 42, 0.08);
-	border: 1px solid rgba(165, 42, 42, 0.14);
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	transition: all 0.22s ease;
+	width: auto;
+	height: auto;
+	min-width: unset;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 0;
 }
 
 .stat-chip .stat-icon-wrap i,
 .stat-chip > i {
-	font-size: 1rem;
+	font-size: 1.35rem;
 	color: var(--main-color);
-	transition: transform 0.22s ease;
+	line-height: 1;
+	transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.stat-chip:hover .stat-icon-wrap,
+.stat-chip:hover .stat-icon-wrap i,
 .stat-chip:hover > i {
-	background: rgba(165, 42, 42, 0.14);
-	border-color: rgba(165, 42, 42, 0.24);
-}
-
-.stat-chip:hover .stat-icon-wrap i {
-	transform: scale(1.08);
+	transform: scale(1.14);
 }
 
 /* Stat Text Info */
@@ -1212,19 +1208,19 @@ header.scrolled {
 }
 
 .stat-chip .stat-val {
-	font-size: 1.05rem;
+	font-size: 1.12rem;
 	font-weight: 700;
-	color: #111827;
+	color: var(--text-color);
 	letter-spacing: -0.01em;
 	line-height: 1.15;
 }
 
 .stat-chip .stat-lbl {
-	font-size: 0.72rem;
+	font-size: 0.76rem;
 	font-weight: 500;
 	color: #4b5563;
-	letter-spacing: 0.1px;
-	margin-top: 1px;
+	letter-spacing: 0.15px;
+	margin-top: 2px;
 	line-height: 1.2;
 	white-space: nowrap;
 }
