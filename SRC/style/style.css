@@ -1138,27 +1138,29 @@ header.scrolled {
 	margin-bottom: 24px;
 }
 
-/* Stats Ribbon - Clean, Balanced Frosted Glass */
+/* Stats Ribbon - Clean Single-Line Frosted Glass Chips */
 .skills-stats-ribbon {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
 	margin: 0 auto 26px auto;
 	width: 100%;
-	max-width: 980px;
 }
 
 .stat-chip {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
-	gap: 12px;
-	padding: 10px 16px;
+	gap: 10px;
+	padding: 9px 16px;
 	background: rgba(255, 255, 255, 0.16);
 	backdrop-filter: blur(14px);
 	-webkit-backdrop-filter: blur(14px);
 	border: 1px solid rgba(255, 255, 255, 0.28);
-	border-radius: 14px;
+	border-radius: 12px;
 	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+	white-space: nowrap;
 	transition: all 0.25s ease;
 }
 
@@ -1187,7 +1189,7 @@ header.scrolled {
 
 .stat-chip .stat-icon-wrap i,
 .stat-chip > i {
-	font-size: 1.35rem;
+	font-size: 1.25rem;
 	color: var(--main-color);
 	line-height: 1;
 	transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1198,30 +1200,32 @@ header.scrolled {
 	transform: scale(1.14);
 }
 
-/* Stat Text Info */
+/* Stat Text Info - Single Line Without Breaking */
 .stat-chip .stat-info,
 .stat-chip > div:not(.stat-icon-wrap) {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	min-width: 0;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 6px;
+	white-space: nowrap;
 }
 
 .stat-chip .stat-val {
-	font-size: 1.12rem;
+	font-size: 1.05rem;
 	font-weight: 700;
 	color: var(--text-color);
 	letter-spacing: -0.01em;
-	line-height: 1.15;
+	line-height: 1;
+	white-space: nowrap;
 }
 
 .stat-chip .stat-lbl {
-	font-size: 0.76rem;
+	font-size: 0.8rem;
 	font-weight: 500;
 	color: #4b5563;
-	letter-spacing: 0.15px;
-	margin-top: 2px;
-	line-height: 1.2;
+	letter-spacing: 0.1px;
+	margin-top: 0;
+	line-height: 1;
 	white-space: nowrap;
 }
 
@@ -1643,9 +1647,7 @@ header.scrolled {
 
 @media (max-width: 900px) {
 	.skills-stats-ribbon {
-		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
-		max-width: 520px;
 	}
 	.skills-grid-4 {
 		grid-template-columns: repeat(2, 1fr);
@@ -1667,15 +1669,15 @@ header.scrolled {
 
 @media (max-width: 580px) {
 	.skills-stats-ribbon {
-		grid-template-columns: 1fr;
 		gap: 8px;
-		max-width: 100%;
 	}
 	.stat-chip {
-		padding: 7px 12px;
+		padding: 8px 12px;
+		white-space: nowrap;
 	}
-	.stat-chip .stat-lbl {
-		white-space: normal;
+	.stat-chip .stat-lbl,
+	.stat-chip .stat-val {
+		white-space: nowrap;
 	}
 	.skills-grid-4 {
 		grid-template-columns: 1fr;
